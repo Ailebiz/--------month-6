@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archeology</title>
+    <link rel="stylesheet" href="css/heologia.css">
+    <!-- <link rel="stylesheet" href="css/muzei.css"> -->
+    <!-- <link rel="stylesheet" href="css/search.css"> -->
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Ар <span>Хиология</span></div>
+            <ul class="nav-links">
+                <li class="id"><a href="#">Жәдігерлер</a></li>
+                <li class="id"><a href="#">Ақпараттар</a></li>
+                <li class="id"><a href="muzei.html">Музейлер</a></li>
+                <li class="id"><a href="search.html">Зерттеу жұмыстары</a></li>
+            </ul>
+        </nav>
+    </header> 
+
+    <main>
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Археология <span> — тарих ғылымының ежелгі дәуір мен </span> <br> орта ғасырдағы адамзат қоғамы дамуының заңдылықтары мен негізгі кезеңдерін зерттейтін саласы</h1>
+                <div class="features">
+                    <div class="feature-item"></div>
+                    <div class="feature-item"></div>
+                    <div class="feature-item"></div>
+                </div>
+                <button class="order-button">Толығырақ білу</button>
+            </div>
+            <div class="hero-image">
+                <img src="https://cdn.iz.ru/sites/default/files/styles/1920x1080/public/article-2020-07/RIAN_5974513.HR_.ru_.jpg?itok=j9Eh8oFc" alt="Healthy Food">
+            </div>
+        </section>
+    </main>
+
+    <main id="main-content">
+        <h2>Археологиялық жәдігерлер</h2>
+    
+        <input type="text" id="search" placeholder="Жәдігер атауын енгізіңіз...">
+        <button onclick="searchArtifact()">Іздеу</button>
+    
+        <div id="cards-container"></div>
+    </main>
+   
+
+
+    <script src="js/search.js"></script>
+</body>
+</html>
