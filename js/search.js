@@ -57,7 +57,7 @@ const artifacts = [
     { 
         name: "Бозоқ қалашығы", 
         description: "Астана маңындағы ортағасырлық қала.",
-        image: "https://egemen.kz/media/2021/04/02/bozok.jpg"
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZSQVWU1mXfa5rp62FGLgMftnVRrjQwKIvgg&s.jpg"
     },
     { 
         name: "Қаңлы мәдениеті", 

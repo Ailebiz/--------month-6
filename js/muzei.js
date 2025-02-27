@@ -39,3 +39,18 @@ function updateCountdown() {
 }
 setInterval(updateCountdown, 1000);
 updateCountdown();
+
+function subscribe() {
+    var email = document.getElementById('email').value;
+    var message = document.getElementById('message');
+    
+    if (email === "") {
+        message.style.color = "red";
+        message.textContent = "Email енгізіңіз!";
+        return;
+    }
+    
+    message.style.color = "green";
+    message.textContent = "Сіз сәтті жазылдыңыз: " + email;
+    document.getElementById('email').value = ""; 
+}

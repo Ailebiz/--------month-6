@@ -92,14 +92,15 @@ ul li::before {
     font-weight: bold;
     font-size: 28px;
     background: linear-gradient(45deg, #00FFD1, #008080);
-  
-    
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
 }
 
 .logo span a:hover {
     background: linear-gradient(45deg, #FF1493, #FF4500);
-    /* -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     text-shadow: 2px 2px 10px rgba(255, 20, 147, 0.6);
 }
 
@@ -137,9 +138,9 @@ button {
 }
 
 .hero-image img {
-    width: 800px;
+    width: 650px;
     border-radius: 20px;
-    height: 300px;
+    height: 350px;
 }
 
 /* Ерекше белгіленген мәтін */
@@ -163,6 +164,31 @@ ul li {
     margin-bottom: 10px;
     font-size: 1.1em;
 }
+
+@media (max-width: 1024px) {
+    .content .box {
+        width: 100%; /
+    }
+    
+    nav a {
+        font-size: 16px;
+    }
+}
+
+/* Телефондар (максимум 768px) */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 1024px) {
+    .content .box {
+        width: 48%;
+    }
+}
+
+
 
 /* Карточкалар
 #cards-container {
@@ -264,6 +290,12 @@ button:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 250px;
     text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+
 }
 
 .card img.artifact-image {
